@@ -46,7 +46,7 @@ Download the latest release for your architecture:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/powerlock.git
+git clone https://github.com/i14a-dsc/powerlock.git
 cd powerlock
 ```
 
@@ -190,4 +190,4 @@ The service uses the Windows API to:
 
 This project is in the public domain.
 
-<p align="center">Copyright &copy; 2025 <a href="https://github.com/your-username" target="_blank">Your Username</a></p>
+<p align="center">Copyright &copy; 2025 <a href="https://github.com/i14a-dsc" target="_blank">Your Username</a></p>
