@@ -1,0 +1,60 @@
+name: Build and Release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Set up MSVC
+      uses: ilammy/msvc-dev-cmd@v1
+      
+    - name: Build application
+      shell: cmd /C {0}
+      run: |
+        call build-all.bat
+        if not exist "bin" (
+          echo "Build failed - bin directory not found"
+          exit /b 1
+        )
+        
+    - name: Prepare release packages
+      shell: cmd /C {0}
+      run: |
+        mkdir power-lock-service-x64
+        copy bin\power_lock_service.exe power-lock-service-x64\
+        copy bin\powerlock.exe power-lock-service-x64\
+        copy README.md power-lock-service-x64\
+        
+        mkdir power-lock-service-x86
+        copy bin\x86\power_lock_service.exe power-lock-service-x86\
+        copy bin\x86\powerlock.exe power-lock-service-x86\
+        copy README.md power-lock-service-x86\
+        
+        mkdir power-lock-service-arm64
+        copy bin\arm64\power_lock_service.exe power-lock-service-arm64\
+        copy bin\arm64\powerlock.exe power-lock-service-arm64\
+        copy README.md power-lock-service-arm64\
+        
+    - name: Create ZIP archives
+      shell: powershell
+      run: |
+        Compress-Archive -Path "power-lock-service-x64\*" -DestinationPath "power-lock-service-x64.zip"
+        Compress-Archive -Path "power-lock-service-x86\*" -DestinationPath "power-lock-service-x86.zip"
+        Compress-Archive -Path "power-lock-service-arm64\*" -DestinationPath "power-lock-service-arm64.zip"
+        
+    - name: Create release assets
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          power-lock-service-x64.zip
+          power-lock-service-x86.zip
+          power-lock-service-arm64.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,46 @@
+# Build outputs
+bin/
+build/
+build-*/
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.lib
+*.exp
+
+# Architecture-specific builds
+bin/x86/
+bin/x64/
+bin/arm64/
+
+# CMake build directories
+build-x64/
+build-x86/
+build-arm64/
+
+# Visual Studio files
+*.vcxproj*
+*.sln
+*.suo
+*.user
+.vs/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Config files (user-specific)
+C:/Data/power.cfg
+
+# Logs
+*.log
+
+# Release packages
+release-*/
+*.zip
