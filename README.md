@@ -1,11 +1,11 @@
 <h3 align="center">🔒⚡<br/><img src="assets/transparent.png" height="30" width="0px"/>PowerLock<img src="assets/transparent.png" height="30" width="0px"/></h3>
 
 <p align="center">
-  <a href="https://github.com/your-username/powerlock/releases">
-    <img src="https://img.shields.io/github/v/release/your-username/powerlock" alt="Latest Release">
+  <a href="https://github.com/i14a-dsc/powerlock/releases">
+    <img src="https://img.shields.io/github/v/release/i14a-dsc/powerlock" alt="Latest Release">
   </a>
-  <a href="https://github.com/your-username/powerlock/releases">
-    <img src="https://img.shields.io/github/downloads/your-username/powerlock/total" alt="Downloads">
+  <a href="https://github.com/i14a-dsc/powerlock/releases">
+    <img src="https://img.shields.io/github/downloads/i14a-dsc/powerlock/total" alt="Downloads">
   </a>
 </p>
 
@@ -30,7 +30,7 @@
 
 Download the latest release for your architecture:
 
-- **[Latest Release](https://github.com/your-username/powerlock/releases/latest)**
+- **[Latest Release](https://github.com/i14a-dsc/powerlock/releases/latest)**
   - `power-lock-service-x64.zip` - For 64-bit Windows
   - `power-lock-service-x86.zip` - For 32-bit Windows
   - `power-lock-service-arm64.zip` - For ARM64 Windows
