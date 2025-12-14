@@ -1,11 +1,11 @@
 <h3 align="center">🔒⚡<br/><img src="assets/transparent.png" height="30" width="0px"/>PowerLock<img src="assets/transparent.png" height="30" width="0px"/></h3>
 
 <p align="center">
-  <a href="https://github.com/your-username/power-lock-service/releases">
-    <img src="https://img.shields.io/github/v/release/your-username/power-lock-service" alt="Latest Release">
+  <a href="https://github.com/your-username/powerlock/releases">
+    <img src="https://img.shields.io/github/v/release/your-username/powerlock" alt="Latest Release">
   </a>
-  <a href="https://github.com/your-username/power-lock-service/releases">
-    <img src="https://img.shields.io/github/downloads/your-username/power-lock-service/total" alt="Downloads">
+  <a href="https://github.com/your-username/powerlock/releases">
+    <img src="https://img.shields.io/github/downloads/your-username/powerlock/total" alt="Downloads">
   </a>
 </p>
 
@@ -30,7 +30,7 @@
 
 Download the latest release for your architecture:
 
-- **[Latest Release](https://github.com/your-username/power-lock-service/releases/latest)**
+- **[Latest Release](https://github.com/your-username/powerlock/releases/latest)**
   - `power-lock-service-x64.zip` - For 64-bit Windows
   - `power-lock-service-x86.zip` - For 32-bit Windows
   - `power-lock-service-arm64.zip` - For ARM64 Windows
@@ -46,8 +46,8 @@ Download the latest release for your architecture:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/power-lock-service.git
-cd power-lock-service
+git clone https://github.com/your-username/powerlock.git
+cd powerlock
 ```
 
 2. Build the project using the provided build scripts:
